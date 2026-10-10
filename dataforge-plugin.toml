@@ -1,0 +1,19 @@
+[plugin]
+id = "dataforge-e4-fixture"
+name = "DataForge E4 Fixture"
+version = "1.0.0"
+plugin_api = 1
+description = "Deterministic no-network transform for DataForge E4 repository-install acceptance."
+author = "DataForge E4 Acceptance Fixture"
+license = "UNLICENSED"
+entrypoint = "fixture_plugin:handle"
+capabilities = ["transform"]
+permissions = []
+platforms = ["macos-arm64"]
+dataforge_compatibility = ">=0.1.0,<0.2.0"
+source = "community"
+revision = "revision-a"
+dependencies = []
+health_check = "health"
+[plugin.runtime]
+type = "python"
